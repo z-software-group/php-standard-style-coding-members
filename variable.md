@@ -11,19 +11,22 @@ naming conventions
     - use underscore(_) for separation.     parable `$name_attribute` 
     - numeric attributes:
         ```
-        #code
+        # code
+
         $user_1 = 'Julie';
         $user_2 = 'Michael';
         ```
     - type attibutes:
         ```
-        #code
+        # code
+
         $age_int    = 21;
         $age_string = "21";
         ```
     - multi attribute:
         ```
-        #code
+        # code
+
         $userAge_1_int = 21;
         $userAge_2_int = 35;
         ```
@@ -32,7 +35,9 @@ use in coding
 -------------
  1. for separating the variables and values from operators ever using space character:
     ```
-    #code
+    # code
+
+    // to max line length 80 character
     $result = $max + 22 + $avarage + $current + $min;
 
     // if line length over 80 character then use multi-line mode
@@ -44,7 +49,7 @@ use in coding
     ```
  2. use in-line-converter for unification in variables types:
     ```
-    #code
+    # code
 
     // convert to integer
     $result = 14 + (int)$bool + $max + (int)$string + (int)$float + 56 + $min;

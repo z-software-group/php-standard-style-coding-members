@@ -3,24 +3,27 @@ string
 
 quote string
 ------------
- 1. to create a plain-string using single-quotes. char `'`
+ 1. create a normal-string by use of single-quotes. char `'`
     ```
-    #code
+    # code
 
     // sample string
     $string = 'hello world!';
     ```
- 2. to create a string literals containing apostrophes and variables. char `"`
+ 2. create a string literals containing apostrophes and variables by use of double-quotes. char `"`
     ```
-    #code
+    # code
 
     // apostrophes string
     $sql = "SELECT `table`.* FROM `database`.`table` WHERE `table`.`col` = '{$value}'";
     ```
- 3. variables in string. code `$message = "Welcome {$username}";`
- 4. strings connection
+
+use in coding
+-------------
+ 1. variables in string. code `$message = "Welcome {$username}";`
+ 2. strings connection
     ```
-    #code
+    # code
 
     #1 example
     // for max line length 80 character
@@ -33,13 +36,22 @@ quote string
          . "WHERE `table`.`col` = '{$value}' "
          . "LIMIT 30, 1";
     ```
- 5. ever use the gettext-function to view
+ 3. ever use the gettext-function to view
     ```
-    #code
+    # code
 
     #1 example
+    // use gettext
     $message = gettext('hello world!');
 
     #2 example
+    // use _ replace gettext
     $welcomeUser = _("Welcome {$username}");
+    ```
+ 4. as function arguments, do not break the string
+    ```
+    # code
+
+    // the long string
+    throw new Exception(_('this is a very very very very very very very very very very very very very very very very very long'));
     ``` 

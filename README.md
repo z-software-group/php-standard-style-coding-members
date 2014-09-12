@@ -10,5 +10,3 @@ lincense and copyright
 ----------------------
 a license and copyright no exists, all right for you.
 [unlicense](http://unlicense.org)
-
-:)
